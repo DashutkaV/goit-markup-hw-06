@@ -609,9 +609,9 @@ img {
 }
 
 .contacts-soc {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     margin-left: 55px;
-    margin-right: auto;
+    margin-right: 93px;
 
 }
 
@@ -659,6 +659,46 @@ img {
     background-color: var(--accent-color);
     fill: var(--btn-color);
 }
+
+.online {
+    flex-grow: 1;
+    
+}
+
+.online-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.online-input {
+    width: 358px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--footer-color);
+    outline: none;
+    transition: border-color var(--accent-color);
+}
+
+.online-input:focus {
+    border-color: var(--accent-color);
+}
+
+.input-btn {
+    display: block;
+    min-width: 200px;
+    height: 50px;
+    /* margin-left: 12px; */
+}
+
+
 
 /* ---------backdrop ----------*/
 
@@ -779,7 +819,7 @@ img {
     font-style: normal; 
     font-weight: 400;
     font-size: 16px;
-    line-height: 14px;
+    line-height: 0.85;
     resize: none;
     outline: none;
     transition: border-color var(--accent-color);
