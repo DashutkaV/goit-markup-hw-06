@@ -431,14 +431,22 @@
             <div class="online">
                 <h2 class="contacts-soc-title">подпишитесь на рассылку</h2>
                 <form class="online-form">
-                    <div class="online-field">
-                        <input 
-                            type="email" 
-                            class="online-input" 
-                            name="online-email"
-                            id="user-email"
-                            placeholder="E-mail"/>
-                        <button type="submit" class="input-btn btn">Подписаться</button>    
+                    <div class="online-inputs">
+                        <div class="online-field">
+                            <input 
+                                type="email" 
+                                class="online-input" 
+                                name="online-email"
+                                id="user-email"
+                                placeholder="E-mail"/>
+                            <label for="user-email" class="online-label"></label>
+                        </div>                        
+                        <div class="input-buton">
+                            <button type="submit" class="input-btn btn">Подписаться</button>
+                            <svg class="input-icon-btn" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-send"></use>
+                            </svg> 
+                        </div>                             
                     </div>
                 </form>
             </div>

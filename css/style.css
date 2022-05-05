@@ -665,10 +665,14 @@ img {
     
 }
 
-.online-field {
+.online-inputs {
     display: flex;
     justify-content: space-between;
 }
+
+/* .online-field {
+    position: relative;
+} */
 
 .online-input {
     width: 358px;
@@ -678,25 +682,51 @@ img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
+    color: var(--btn-color);
     background-color: transparent;
     font-family: 'Roboto';
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.25;
-    color: var(--footer-color);
     outline: none;
-    transition: border-color var(--accent-color);
+    transition: border-color  var(--btn-color) border-color var(--cubic);
 }
 
 .online-input:focus {
-    border-color: var(--accent-color);
+    border-color: var(--btn-color);
+}
+
+.online-label {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--footer-color);
+    transform: border-color var(--cubic);
 }
 
 .input-btn {
-    display: block;
+    display: flex;
     min-width: 200px;
     height: 50px;
-    /* margin-left: 12px; */
+    position: relative;
+    padding-left: 29px;
+    transform: color var(--cubic);
+
 }
+
+
+.input-icon-btn {
+    transform: translate3d(145px, -33px, 10px);
+}
+
+.input-btn:hover .input-icon-btn 
+.input-btn:focus .input-icon-btn {
+    cursor: pointer;
+}
+
 
 
 
