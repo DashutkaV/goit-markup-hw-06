@@ -806,6 +806,8 @@ img {
 }
 
 .modal-agree {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
