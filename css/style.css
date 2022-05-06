@@ -719,13 +719,15 @@ img {
 
 
 .input-icon-btn {
+    /* position: absolute  */
+    cursor: pointer;
     transform: translate3d(145px, -33px, 10px);
 }
 
-.input-btn:hover .input-icon-btn 
+/* .input-btn:hover .input-icon-btn 
 .input-btn:focus .input-icon-btn {
     cursor: pointer;
-}
+} */
 
 
 
