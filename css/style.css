@@ -208,6 +208,7 @@ img {
     color: var(--accent-color);
 } 
 
+
 /*-------------HERO---------------*/
 
 .hero-content{
@@ -249,6 +250,7 @@ img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+
 /*------------features----------*/
 
 .features-list {
@@ -288,6 +290,7 @@ img {
     max-width: 270px;
 }
 
+
 /*-------------WORKS---------------*/
 
 .works {
@@ -323,7 +326,6 @@ img {
     align-items: center;
     font-weight: 700;
     font-size: 14px;
-    /* line-height: 1.14px; */
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -333,6 +335,7 @@ img {
     position: absolute;
     bottom: 0;
 }
+
 
 /*-------------TEAM---------------*/
 
@@ -449,8 +452,8 @@ img {
     fill: var(--accent-color);
 }
 
-/*------------PORTFOLIO---------------*/
 
+/*------------PORTFOLIO---------------*/
 
 .portfolio-filtres {
     display: flex;
@@ -503,7 +506,6 @@ img {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-
 .portfolio-meta {
     position: relative;
     overflow: hidden;
@@ -524,9 +526,7 @@ img {
     transition: var(--cubic);
     bottom: 0;
     overflow: auto;
-
 }
-
 
 .portfolio-description {
     padding: 20px 24px;
@@ -549,6 +549,7 @@ img {
     color: var(--header-link-color);
 }
 
+
 /*------------FOOTER---------------*/
 
 .footer-content {
@@ -564,6 +565,7 @@ img {
 
 .address-content {
     text-align: cover;
+    flex-grow: 1;
 }
 
 .address {
@@ -609,7 +611,6 @@ img {
 }
 
 .contacts-soc {
-    /* flex-grow: 1; */
     margin-left: 55px;
     margin-right: 93px;
 
@@ -660,19 +661,14 @@ img {
     fill: var(--btn-color);
 }
 
-.online {
-    flex-grow: 1;
-    
-}
-
 .online-inputs {
     display: flex;
     justify-content: space-between;
 }
 
-/* .online-field {
-    position: relative;
-} */
+.online-field {
+    margin-right: 12px;
+}
 
 .online-input {
     width: 358px;
@@ -696,9 +692,6 @@ img {
 }
 
 .online-label {
-    /* position: absolute; */
-    /* top: 0;
-    left: 0; */
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
@@ -708,7 +701,8 @@ img {
 }
 
 .input-btn {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     min-width: 200px;
     height: 50px;
     position: relative;
@@ -716,11 +710,11 @@ img {
     transform: color var(--cubic);
 }
 
-
 .input-icon-btn {
-    /* position: absolute  */
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 6px;
     cursor: pointer;
-    transform: translate3d(145px, -33px, 10px);
 }
 
 
@@ -787,7 +781,7 @@ img {
 }
 
 .modal-field {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .modal-name {
@@ -832,12 +826,12 @@ img {
 }
 
 .input-text {
+    display: block;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    margin-bottom: 20px;
     padding: 12px 16px;
     font-family: 'Roboto';
     font-style: normal; 
@@ -865,13 +859,12 @@ img {
     width: 16px;
     height: 15px;
     border-radius: #212121;
-    
-
 }
 
 .modal-agree {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -916,5 +909,5 @@ img {
     display: block;
     min-width: 200px;
     height: 50px;
-    margin: 30px auto 40px;
+    margin: 30px auto 0;
 }
